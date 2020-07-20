@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="image-viewer">
+    <div class="main-image">
+      <img [src]="product?.image" />
+    </div>
+  </div>
+  <div class="detail">
+    <h1 class="detail-name">{{ product?.name }}</h1>
+    <p class="detail-short-description">
+      {{ product?.description }}
+    </p>
+  </div>
+  <div class="pricing">
+    <div class="pricing-price">{{ product?.price }}{{ product?.currency }}</div>
+    <button class="btn pricing-btn">Add to Cart</button>
+  </div>
+</div>
